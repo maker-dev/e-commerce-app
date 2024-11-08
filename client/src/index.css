@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@100..900&family=Prata&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +10,14 @@ a.active hr {
 
 .nav-link {
   @apply flex flex-col items-center gap-1;
+}
+
+* {
+  font-family: Outfit;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
 }
