@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 a.active hr {
-    @apply  block w-2/4 border-none h-[1.5px] bg-gray-700;
+  @apply block w-2/4 border-none h-[1.5px] bg-gray-700;
+}
+
+.nav-link {
+  @apply flex flex-col items-center gap-1;
 }
