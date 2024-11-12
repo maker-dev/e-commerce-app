@@ -1,9 +1,9 @@
 import { createContext } from "react";
+import PropTypes from "prop-types";
 import { products } from "../assets/assets";
 
 const ShopContext = createContext(null);
 
-// eslint-disable-next-line react/prop-types
 const ShopContextProvider = ({ children }) => {
   const currency = "$";
   const delivery_fee = 10;
@@ -15,6 +15,10 @@ const ShopContextProvider = ({ children }) => {
   };
 
   return <ShopContext.Provider value={value}>{children}</ShopContext.Provider>;
+};
+
+ShopContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export { ShopContext };
