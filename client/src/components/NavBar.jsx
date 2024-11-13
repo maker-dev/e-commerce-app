@@ -68,7 +68,7 @@ function NavBar() {
 
       {/* Sidebar menu for small screens */}
       <div
-        className="absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all"
+        className="fixed inset-0 overflow-hidden bg-white transition-all z-10"
         style={{
           width: visible ? "100%" : "0%",
         }}
